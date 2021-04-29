@@ -19,9 +19,18 @@ class loginMenu: UIViewController {
     
     @IBOutlet weak var txtMemid: UITextField!
     @IBOutlet weak var txtPassw: UITextField!
-    
+    func cusalert(Gmessage:String,Title:String,AlertOption:String){
+        let alert = UIAlertController(title: Title, message: Gmessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: AlertOption, style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBAction func btnSignin(_ sender: Any) {
-        readDB4memberID(memid: txtMemid.text!, mempass: txtPassw.text!)
+        if txtMemid.text != "" && txtPassw.text != "" {
+            readDB4memberID(memid: txtMemid.text!, mempass: txtPassw.text!)
+        }else{
+            cusalert(Gmessage: "กรุณากรอกUsername/Password ให้ครบถ้วน", Title: "ไม่สามารถเข้าสู่ระบบ", AlertOption: "ตกลง")
+        }
+        
         print("btn down")
     }
     
@@ -67,21 +76,24 @@ class loginMenu: UIViewController {
             view.endEditing(true)
     }
     func readDB4memberID(memid:String,mempass:String){
+        print("in read db")
         do {
 
         let dbQueue = try DatabaseQueue(path: dbPath, configuration: config)
 
             try dbQueue.inDatabase { db in
-
+                print("in qeuery")
                 //Select all data from the table named tablename residing in SQLite
 
                let rows = try Row.fetchCursor(db, sql: "SELECT member_id,member_name,mem_passw FROM register where member_name = (?) and mem_passw = (?)",
                arguments: [memid,mempass])
+//                print(xxx!["member_name"]!)
+                print("pass fetch")
                 
-
-                
-                while let row = try rows.next() {
+                if let row = try rows.next() {
                     print("pass")
+                    
+
                      if memid == row["member_name"] &&  mempass == row["mem_passw"] {
                         //Goto NC1
                         let alert = UIAlertController(title: "สำเร็จ", message: "คุณได้ลงชื่อเข้าใช้เรียบร้อย", preferredStyle: .alert)
@@ -97,6 +109,8 @@ class loginMenu: UIViewController {
                         self.view.window?.rootViewController = mvc
                         
                      }
+                }else{
+                    cusalert(Gmessage: "ไม่สำเร็จ", Title: "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง", AlertOption: "ลองใหม่")
                 }
             }
         } catch {
