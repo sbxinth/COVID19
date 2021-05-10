@@ -10,6 +10,8 @@
 		4103A90BC48527F7D53CD0DD /* Pods_COVID19_COVID19UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB691FDAD3E8B7CB8BFEC24 /* Pods_COVID19_COVID19UITests.framework */; };
 		61ADE64DE2911B328DE34A17 /* Pods_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17234C74B3815EBC99B67650 /* Pods_COVID19.framework */; };
 		8D22B080263897350078723C /* register_db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8D22B07F263897350078723C /* register_db.sqlite */; };
+		8D4D9D5C2649767A003DCE82 /* exampleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D9D5B2649767A003DCE82 /* exampleChart.swift */; };
+		8D4D9D5E26499908003DCE82 /* nav2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D9D5D26499908003DCE82 /* nav2ViewController.swift */; };
 		8D701E2926383F02001C982D /* BytTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D701E2826383F02001C982D /* BytTime.swift */; };
 		8D701E2E26384511001C982D /* ByTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D701E2D26384511001C982D /* ByTimeCell.swift */; };
 		8D701E3326388B99001C982D /* ByCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D701E3226388B99001C982D /* ByCase.swift */; };
@@ -57,6 +59,8 @@
 		6D325B00D24D0FA1C759C49A /* Pods-COVID19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19Tests.debug.xcconfig"; path = "Target Support Files/Pods-COVID19Tests/Pods-COVID19Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		77C95266AB7F0FFB36F3B771 /* Pods_COVID19Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D22B07F263897350078723C /* register_db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = register_db.sqlite; sourceTree = "<group>"; };
+		8D4D9D5B2649767A003DCE82 /* exampleChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleChart.swift; sourceTree = "<group>"; };
+		8D4D9D5D26499908003DCE82 /* nav2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nav2ViewController.swift; sourceTree = "<group>"; };
 		8D701E2826383F02001C982D /* BytTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytTime.swift; sourceTree = "<group>"; };
 		8D701E2D26384511001C982D /* ByTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTimeCell.swift; sourceTree = "<group>"; };
 		8D701E3226388B99001C982D /* ByCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByCase.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				8D7E01B72638204200D0004A /* SceneDelegate.swift */,
 				8D7E01B92638204200D0004A /* ViewController.swift */,
 				8D7E01BB2638204200D0004A /* Main.storyboard */,
+				8D4D9D5D26499908003DCE82 /* nav2ViewController.swift */,
+				8D4D9D5B2649767A003DCE82 /* exampleChart.swift */,
 				8D701E4F263890F5001C982D /* loginMenu.swift */,
 				8D701E4E263890F5001C982D /* register.swift */,
 				8D701E2D26384511001C982D /* ByTimeCell.swift */,
@@ -466,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D701E51263890F5001C982D /* loginMenu.swift in Sources */,
+				8D4D9D5E26499908003DCE82 /* nav2ViewController.swift in Sources */,
 				8D7E01EE2638227300D0004A /* DailyStatVC.swift in Sources */,
 				8D7E01F9263831D400D0004A /* CovidDailyModel.swift in Sources */,
 				8D7E01BA2638204200D0004A /* ViewController.swift in Sources */,
@@ -473,6 +480,7 @@
 				8D7E01F32638245300D0004A /* ByTimeVC.swift in Sources */,
 				8D7E01E9263820C400D0004A /* MenuVC.swift in Sources */,
 				8D7E01B62638204200D0004A /* AppDelegate.swift in Sources */,
+				8D4D9D5C2649767A003DCE82 /* exampleChart.swift in Sources */,
 				8D701E2E26384511001C982D /* ByTimeCell.swift in Sources */,
 				8D701E2926383F02001C982D /* BytTime.swift in Sources */,
 				8D701E3326388B99001C982D /* ByCase.swift in Sources */,

@@ -18,14 +18,14 @@ class MenuVC: UIViewController {
         print("Logged out")
     }
     @IBAction func Btn_daily(_ sender: Any) {
-        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mvc = storyboard.instantiateViewController(identifier: "Daily") as! DailyStatVC
-        self.view.window?.rootViewController = mvc
+//        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mvc = storyboard.instantiateViewController(identifier: "Daily") as! DailyStatVC
+//        self.view.window?.rootViewController = mvc
     }
     @IBAction func Btn_byTime(_ sender: Any) {
-        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mvc = storyboard.instantiateViewController(identifier: "ByTime") as! ByTimeVC
-        self.view.window?.rootViewController = mvc
+//        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mvc = storyboard.instantiateViewController(identifier: "ByTime") as! ByTimeVC
+//        self.view.window?.rootViewController = mvc
     }
     
     override func viewDidLoad() {
@@ -38,6 +38,20 @@ class MenuVC: UIViewController {
         
 //        print(sss[1])
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
 

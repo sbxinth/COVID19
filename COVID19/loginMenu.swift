@@ -19,6 +19,8 @@ class loginMenu: UIViewController {
     
     @IBOutlet weak var txtMemid: UITextField!
     @IBOutlet weak var txtPassw: UITextField!
+    @IBAction func Btn_regist(_ sender: Any) {
+    }
     func cusalert(Gmessage:String,Title:String,AlertOption:String){
         let alert = UIAlertController(title: Title, message: Gmessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: AlertOption, style: .default, handler: nil))
@@ -65,7 +67,7 @@ class loginMenu: UIViewController {
                     self.txtPassw.becomeFirstResponder()
                 }
                 let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let mvc = storyboard.instantiateViewController(identifier: "Menu") as! MenuVC
+                let mvc = storyboard.instantiateViewController(identifier: "nav2") as! nav2ViewController
                 self.view.window?.rootViewController = mvc
             });
             alert.addAction(action)
@@ -101,7 +103,7 @@ class loginMenu: UIViewController {
                         alert.addAction(action)
                         self.present(alert, animated: true, completion:nil)
                         let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let mvc = storyBoard.instantiateViewController(identifier: "Menu") as! MenuVC
+                        let mvc = storyBoard.instantiateViewController(identifier: "nav2") as! nav2ViewController
                         user.append(row["member_id"])
                         user.append(row["member_name"])
                         user.append(row["mem_passw"])
@@ -141,7 +143,19 @@ class loginMenu: UIViewController {
         
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 
 }// end
 
