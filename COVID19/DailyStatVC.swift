@@ -29,11 +29,7 @@ class DailyStatVC: UIViewController {
     @IBOutlet weak var txt_lastUpdate: UILabel!
     @IBOutlet weak var txt_credit: UILabel!
     
-    @IBAction func Btn_back(_ sender: Any) {
-        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mvc = storyboard.instantiateViewController(identifier: "Menu") as! MenuVC
-        self.view.window?.rootViewController = mvc
-    }
+
     
     func loadData()  {
         AF.request("https://covid19.th-stat.com/api/open/today", method: .get).responseJSON { (response) in

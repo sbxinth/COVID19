@@ -16,6 +16,7 @@ target 'COVID19' do
   pod 'Firebase/Database'
   pod 'GRDB.swift'
   pod 'Charts'
+  pod 'GoogleSignIn'
   target 'COVID19Tests' do
     inherit! :search_paths
     # Pods for testing

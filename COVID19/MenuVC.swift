@@ -30,6 +30,7 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(defaults.object(forKey: "saveUser"))
         if defaults.object(forKey: "savedUser") != nil{
             let sss = defaults.object(forKey: "savedUser") as! [String]
             txt_hiUser.text = "Hi, "+sss[1]

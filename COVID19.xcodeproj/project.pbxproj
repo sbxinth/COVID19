@@ -12,6 +12,17 @@
 		8D22B080263897350078723C /* register_db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8D22B07F263897350078723C /* register_db.sqlite */; };
 		8D4D9D5C2649767A003DCE82 /* exampleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D9D5B2649767A003DCE82 /* exampleChart.swift */; };
 		8D4D9D5E26499908003DCE82 /* nav2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D9D5D26499908003DCE82 /* nav2ViewController.swift */; };
+		8D4D9D602649A38A003DCE82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D5F2649A38A003DCE82 /* GoogleService-Info.plist */; };
+		8D4D9D64264AF546003DCE82 /* increase.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D61264AF545003DCE82 /* increase.png */; };
+		8D4D9D65264AF546003DCE82 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D62264AF545003DCE82 /* calendar.png */; };
+		8D4D9D66264AF546003DCE82 /* 24-hours.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D63264AF546003DCE82 /* 24-hours.png */; };
+		8D4D9D68264AF5CE003DCE82 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D67264AF5CE003DCE82 /* arrow.png */; };
+		8D4D9D6D264AF6A8003DCE82 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D69264AF6A7003DCE82 /* check.png */; };
+		8D4D9D6E264AF6A8003DCE82 /* syringe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D6A264AF6A7003DCE82 /* syringe.png */; };
+		8D4D9D6F264AF6A8003DCE82 /* band-aid.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D6B264AF6A8003DCE82 /* band-aid.png */; };
+		8D4D9D70264AF6A8003DCE82 /* tombstone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D6C264AF6A8003DCE82 /* tombstone.png */; };
+		8D4D9D72264AF77B003DCE82 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D71264AF77B003DCE82 /* logo.png */; };
+		8D4D9D74264AF8A4003DCE82 /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4D9D73264AF8A4003DCE82 /* nurse.png */; };
 		8D701E2926383F02001C982D /* BytTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D701E2826383F02001C982D /* BytTime.swift */; };
 		8D701E2E26384511001C982D /* ByTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D701E2D26384511001C982D /* ByTimeCell.swift */; };
 		8D701E3326388B99001C982D /* ByCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D701E3226388B99001C982D /* ByCase.swift */; };
@@ -61,6 +72,17 @@
 		8D22B07F263897350078723C /* register_db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = register_db.sqlite; sourceTree = "<group>"; };
 		8D4D9D5B2649767A003DCE82 /* exampleChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleChart.swift; sourceTree = "<group>"; };
 		8D4D9D5D26499908003DCE82 /* nav2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nav2ViewController.swift; sourceTree = "<group>"; };
+		8D4D9D5F2649A38A003DCE82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D4D9D61264AF545003DCE82 /* increase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = increase.png; sourceTree = "<group>"; };
+		8D4D9D62264AF545003DCE82 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		8D4D9D63264AF546003DCE82 /* 24-hours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24-hours.png"; sourceTree = "<group>"; };
+		8D4D9D67264AF5CE003DCE82 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		8D4D9D69264AF6A7003DCE82 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		8D4D9D6A264AF6A7003DCE82 /* syringe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syringe.png; sourceTree = "<group>"; };
+		8D4D9D6B264AF6A8003DCE82 /* band-aid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "band-aid.png"; sourceTree = "<group>"; };
+		8D4D9D6C264AF6A8003DCE82 /* tombstone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tombstone.png; sourceTree = "<group>"; };
+		8D4D9D71264AF77B003DCE82 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8D4D9D73264AF8A4003DCE82 /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
 		8D701E2826383F02001C982D /* BytTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytTime.swift; sourceTree = "<group>"; };
 		8D701E2D26384511001C982D /* ByTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTimeCell.swift; sourceTree = "<group>"; };
 		8D701E3226388B99001C982D /* ByCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByCase.swift; sourceTree = "<group>"; };
@@ -137,9 +159,19 @@
 		8D701E552638919D001C982D /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8D4D9D63264AF546003DCE82 /* 24-hours.png */,
+				8D4D9D67264AF5CE003DCE82 /* arrow.png */,
+				8D4D9D62264AF545003DCE82 /* calendar.png */,
+				8D4D9D61264AF545003DCE82 /* increase.png */,
 				8D701E562638919D001C982D /* yahoo.png */,
 				8D701E572638919D001C982D /* google.png */,
 				8D701E582638919D001C982D /* mask.png */,
+				8D4D9D73264AF8A4003DCE82 /* nurse.png */,
+				8D4D9D6B264AF6A8003DCE82 /* band-aid.png */,
+				8D4D9D71264AF77B003DCE82 /* logo.png */,
+				8D4D9D69264AF6A7003DCE82 /* check.png */,
+				8D4D9D6A264AF6A7003DCE82 /* syringe.png */,
+				8D4D9D6C264AF6A8003DCE82 /* tombstone.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -181,6 +213,7 @@
 				8D701E4F263890F5001C982D /* loginMenu.swift */,
 				8D701E4E263890F5001C982D /* register.swift */,
 				8D701E2D26384511001C982D /* ByTimeCell.swift */,
+				8D4D9D5F2649A38A003DCE82 /* GoogleService-Info.plist */,
 				8D7E01F22638245300D0004A /* ByTimeVC.swift */,
 				8D7E01ED2638227300D0004A /* DailyStatVC.swift */,
 				8D7E01E8263820C400D0004A /* MenuVC.swift */,
@@ -241,6 +274,7 @@
 				8D7E01AF2638204200D0004A /* Frameworks */,
 				8D7E01B02638204200D0004A /* Resources */,
 				D09AD7283BBFCBDF522707FB /* [CP] Embed Pods Frameworks */,
+				B0FFFE8DAB4D63B907391122 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +313,7 @@
 				8D7E01D02638204500D0004A /* Frameworks */,
 				8D7E01D12638204500D0004A /* Resources */,
 				BCE1AE6A554110363562E4A3 /* [CP] Embed Pods Frameworks */,
+				C50EC3ED9BA350DC03310A33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,10 +373,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D701E592638919D001C982D /* yahoo.png in Resources */,
+				8D4D9D6F264AF6A8003DCE82 /* band-aid.png in Resources */,
+				8D4D9D6D264AF6A8003DCE82 /* check.png in Resources */,
+				8D4D9D602649A38A003DCE82 /* GoogleService-Info.plist in Resources */,
+				8D4D9D64264AF546003DCE82 /* increase.png in Resources */,
+				8D4D9D72264AF77B003DCE82 /* logo.png in Resources */,
 				8D7E01C22638204400D0004A /* LaunchScreen.storyboard in Resources */,
+				8D4D9D6E264AF6A8003DCE82 /* syringe.png in Resources */,
 				8D7E01BF2638204400D0004A /* Assets.xcassets in Resources */,
+				8D4D9D74264AF8A4003DCE82 /* nurse.png in Resources */,
 				8D701E5A2638919D001C982D /* google.png in Resources */,
+				8D4D9D66264AF546003DCE82 /* 24-hours.png in Resources */,
+				8D4D9D68264AF5CE003DCE82 /* arrow.png in Resources */,
+				8D4D9D70264AF6A8003DCE82 /* tombstone.png in Resources */,
 				8D7E01BD2638204200D0004A /* Main.storyboard in Resources */,
+				8D4D9D65264AF546003DCE82 /* calendar.png in Resources */,
 				8D701E5B2638919E001C982D /* mask.png in Resources */,
 				8D22B080263897350078723C /* register_db.sqlite in Resources */,
 			);
@@ -386,6 +432,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0FFFE8DAB4D63B907391122 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID19/Pods-COVID19-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BCE1AE6A554110363562E4A3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +486,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50EC3ED9BA350DC03310A33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19-COVID19UITests/Pods-COVID19-COVID19UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19-COVID19UITests/Pods-COVID19-COVID19UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID19-COVID19UITests/Pods-COVID19-COVID19UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D09AD7283BBFCBDF522707FB /* [CP] Embed Pods Frameworks */ = {

@@ -7,8 +7,33 @@
 
 import UIKit
 import GRDB
+import GoogleSignIn
+import FirebaseAuth
+import FirebaseCore
+import Firebase
 
-class loginMenu: UIViewController {
+class loginMenu: UIViewController,GIDSignInDelegate{
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            let sesuser = UserDefaults.standard
+            var arDat = [String]()
+            print("success ! you have logged in by user email :",user.profile.email ?? "No email")
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let mvc = storyboard.instantiateViewController(identifier: "nav2") as! nav2ViewController
+            self.view.window?.rootViewController = mvc
+            print(user.profile.givenName,user.profile.familyName,user.profile.name)
+            arDat.append(user.profile.givenName)
+            arDat.append(user.profile.name)
+            arDat.append(user.profile.familyName)
+            sesuser.set(arDat, forKey: "savedUser")
+            GIDSignIn.sharedInstance().signOut()
+            //
+            
+        }else {
+            print("ERROR ID ---> ",error.localizedDescription)
+        }
+    }
+    
     var dbPath : String = ""
     var dbResourcePath : String = ""
     var config = Configuration()
@@ -17,6 +42,7 @@ class loginMenu: UIViewController {
     var defaults = UserDefaults.standard
     var user:[String]=[]
     
+    @IBOutlet var signInButton:GIDSignInButton!
     @IBOutlet weak var txtMemid: UITextField!
     @IBOutlet weak var txtPassw: UITextField!
     @IBAction func Btn_regist(_ sender: Any) {
@@ -73,10 +99,10 @@ class loginMenu: UIViewController {
             alert.addAction(action)
             self.present(alert, animated: true, completion:nil)
         }
-    @objc func tap(sender: UITapGestureRecognizer){
-            print("tapped")
-            view.endEditing(true)
-    }
+//    @objc func tap(sender: UITapGestureRecognizer){
+//            print("tapped")
+//            view.endEditing(true)
+//    }
     func readDB4memberID(memid:String,mempass:String){
         print("in read db")
         do {
@@ -122,7 +148,7 @@ class loginMenu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
+//        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
         connect2DB()
         if defaults.object(forKey: "savedUser") != nil {
             let notEmt=defaults.object(forKey: "savedUser") as! [String]
@@ -131,16 +157,18 @@ class loginMenu: UIViewController {
                 let alert = UIAlertController(title: "แจ้งเตือน", message: "เนื่องจากคุณยังไม่ได้ออกจากระบบ ระบบจะพาไปสู่เมนูหลัก", preferredStyle: .alert)
                 let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: {_ in
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let mvc = storyboard.instantiateViewController(identifier: "Menu") as! MenuVC
+                    let mvc = storyboard.instantiateViewController(identifier: "nav2") as! nav2ViewController
                     self.view.window?.rootViewController = mvc
                 });
                 alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
                 alert.addAction(action)
                 self.present(alert, animated: true, completion:nil)
             }
+            
         }
-       
-        
+
+        GIDSignIn.sharedInstance()?.presentingViewController=self
+        GIDSignIn.sharedInstance()?.delegate=self
         
     }
     override func viewWillAppear(_ animated: Bool) {
